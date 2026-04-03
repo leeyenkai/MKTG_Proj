@@ -59,9 +59,15 @@ st.markdown("""
     div[data-testid="stSidebar"] .stMultiSelect label,
     div[data-testid="stSidebar"] .stSlider label {color: #AA9868 !important;}
     .insight-box {background: #F5F0E6; border-left: 5px solid #AA9868;
-        padding: 15px; border-radius: 0 8px 8px 0; margin: 10px 0;}
+        padding: 15px; border-radius: 0 8px 8px 0; margin: 10px 0;
+        color: #1a1a1a !important;}
+    .insight-box * {color: #1a1a1a !important;}
+    .insight-box h4 {color: #033C5A !important;}
     .method-box {background: #e8f0f5; border-left: 5px solid #033C5A;
-        padding: 15px; border-radius: 0 8px 8px 0; margin: 10px 0;}
+        padding: 15px; border-radius: 0 8px 8px 0; margin: 10px 0;
+        color: #1a1a1a !important;}
+    .method-box * {color: #1a1a1a !important;}
+    .method-box b {color: #033C5A !important;}
 </style>
 """, unsafe_allow_html=True)
 
