@@ -82,7 +82,7 @@ rating_cols = ['ServiceRating', 'FoodRating', 'AmbianceRating']
 target = 'HighSatisfaction'
 
 # ─── Sidebar Navigation ────────────────────────────────────────────────────
-st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/GW_logo.svg/1200px-GW_logo.svg.png", width=180)
+st.sidebar.markdown("<h2 style='text-align:center; color:#AA9868;'>GW Business</h2>", unsafe_allow_html=True)
 st.sidebar.title("Navigation")
 
 pages = [
@@ -189,9 +189,12 @@ elif page == pages[1]:
     st.markdown("### Data Dictionary")
     data_dict = pd.DataFrame({
         'Variable': df.columns,
-        'Type': ['ID'] + ['Numeric']*1 + ['Categorical'] + ['Numeric'] +
-                ['Categorical'] + ['Numeric'] + ['Categorical']*3 + ['Categorical'] +
-                ['Binary']*3 + ['Numeric'] + ['Numeric (1-5)']*3 + ['Binary (Target)'],
+        'Type': ['ID', 'Numeric', 'Categorical', 'Numeric',
+                'Categorical', 'Numeric', 'Categorical', 'Categorical',
+                'Numeric', 'Categorical', 'Categorical',
+                'Binary', 'Binary', 'Binary',
+                'Numeric', 'Numeric (1-5)', 'Numeric (1-5)', 'Numeric (1-5)',
+                'Binary (Target)'],
         'Description': [
             'Unique customer identifier', 'Customer age in years',
             'Male / Female', 'Annual income ($)',
